@@ -37,3 +37,33 @@ Router.map(function(){
         template: 'aboutUsPage'
     });
 });
+Router.map(function(){
+    this.route('gallery', {
+        path: '/gallery',
+        template: 'galleryPage'
+    });
+});
+Router.map(function(){
+    this.route('donate', {
+        path: '/donate',
+        template: 'donatePage'
+    });
+});
+Router.map(function(){
+    this.route('whatwedo', {
+        path: '/whatwedo',
+        template: 'whatwedoPage'
+    });
+});
+Router.map(function(){
+    this.route('howwedo', {
+        path: '/howwedo',
+        template: 'howwedoPage'
+    });
+});
+Router.map(function(){
+    this.route('donateform', {
+        path: '/donateform',
+        template: 'donateformPage'
+    });
+});

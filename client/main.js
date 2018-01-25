@@ -3,11 +3,13 @@ import { Template } from 'meteor/templating';
 
 import './main.html';
 import '../imports/header.html';
+import '../imports/footer.html';
 import '../imports/hp.html';
 import '../client/aboutUs.html';
 import '../client/team.html';
 import '../client/FAQ.html';
-import '../imports/footer.html';
+import '../client/donate.html';
+
 
 // import '../imports/team.html';
 

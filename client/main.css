@@ -10,6 +10,10 @@ img{
     max-width: 100%;
     display: block;
 }
+a:hover, a:focus{
+    text-decoration: none;
+    color: #fff;
+}
 body{
     font-size: 16px;
     min-height: 100vh;
@@ -21,11 +25,17 @@ body{
     font-style: italic;
 }
 .header-container .logo-container{
-    padding: 5px 0;
+    padding: 4px 0;
+}
+.header-container .logo-container img{
+    width: 60%;
 }
 nav{
     background-color: #fff;
     box-shadow: none;
+    height: auto;
+    min-height: auto;
+    line-height: 16px;
 }
 .dropdown-content{
     box-shadow: none;
@@ -35,30 +45,89 @@ nav{
     font-size: 16px !important;
     border-radius: 4px;
 }
-nav ul a{
+nav ul a, .dropdown-content li a{
     color: #807e7e;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 16px;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 20px;
 }
 nav .nav-wrapper{
     padding: 0 90px;
 }
+.navbar-fixed{
+    height: 75px;
+}
+/* nav ul li:hover{
+    background-color: #ebf6e5;
+    
+} */
 nav ul a:hover{
-    background-color: transparent;
-    border-bottom: 4px solid #1d993d;
+    /* border-bottom: 4px solid #1d993d; */
+    background-color: #ebf6e5;
 }
 .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected{
     background-color: transparent;
 }
-nav ul li, .dropdown-content li {
-    padding: 0 15px;
+nav ul li{
+    padding: 2px;
 }
-nav ul a, .dropdown-content li a{
-    padding: 0;
-    color: #807e7e;
-    font-weight: bold;
-    letter-spacing: 1px;
+nav ul a{
+    padding: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+nav ul a.aboutus{
+    background: #4d87ec;
+}
+nav ul a.aboutus:hover, nav ul a.aboutus:focus{
+    background: #f3bd42;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul a.whatwedo{
+    background: #da5040;
+}
+nav ul a.whatwedo:hover, nav ul a.whatwedo:focus{
+    background: #56a55c;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul a.howwedo{
+    background: #f3bd42;
+}
+nav ul a.howwedo:hover, nav ul a.howwedo:focus{
+    background: #4d87ec;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul a.faq{
+    background: #56a55c;
+}
+nav ul a.faq:hover, nav ul a.faq:focus{
+    background: #da5040;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul a.gallery{
+    background: #4d87ec;
+}
+nav ul a.gallery:hover, nav ul a.gallery:focus{
+    background: #f3bd42;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul a.donate{
+    background: #56a55c; 
+}
+nav ul a.donate:hover, nav ul a:focus{
+    background: #f3bd42;
+    text-decoration: none;
+    color: #fff; 
 }
 ul.dropdown-content{
     background-color: #ebf6e5;
@@ -75,15 +144,25 @@ ul.dropdown-content{
     min-height: auto;
     line-height: 1em;
 }
-h4{
+.text-wrap h4{
+    line-height: 20px;
+    margin-top: 0;
+}
+.h4, .h5, .h6, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.homepage-common-wrap h4{
     font-size: 20px;
     line-height: 1em;
     font-weight: bold;
-    font-style: italic;
     font-family: "Helvetica Neue";
-    color: #1d993d;
+    color: #3aaaf5;
 }
-p{
+.homepage-common-wrap p{
+    margin: 0;
+}
+.homepage-common-wrap p, .homepage-common-wrap ul{
     line-height: 1.5em;
     color: #807e7e;
     text-align: justify;
@@ -93,20 +172,26 @@ p{
     padding-bottom: 20px;
 }
 .homepage-common-wrap{
-    padding: 0 90px; 
+    padding: 20px 90px; 
     width: 100%;
     float: left;
 }
-.ibbani-wrap p{
-    font-style: italic;
+.homepage-common-wrap a, .homepage-common-wrap p.heading-txt{
+    color: #2cada8;
+    font-size: 14px;
 }
+
 .text-wrap{
     width: 100%;
     float: left;
     position: absolute;
     top: 20%;
-    padding-left: 6%;
+    padding: 0 1%;
     left: 0;
+    background:#56a55c;
+    color: #fff;
+    width: 545px;
+    border-radius: 10px;
 }
 .text-wrap-common{
     width: 33.33%;
@@ -115,6 +200,7 @@ p{
 }
 .text-wrap-common p{
     font-size: 14px;
+    line-height: 22px;
 }
 .img-wrap, .slider-wrap{
     position: relative;
@@ -127,9 +213,9 @@ p{
     display: inline-block;
     padding-right: 5px;
 }
-h5{
+.homepage-common-wrap h5{
     font-size: 16px;
-    color: #807e7e;
+    color: #2cada8;
     font-weight: bold;
 }
 .footer-container{
@@ -158,7 +244,7 @@ h5{
 }
 .text-wrap span{
     font-size: 14px;
-    color: #000;
+    /* color: #000; */
     font-style: normal;
 }
 .mission-objective-wrap{
@@ -166,6 +252,33 @@ h5{
     width: 100%;
     float: left;
 }
-.text-wrap h4{
+/* .text-wrap h4{
     color: #012b72
+} */
+.gallery-wrap, .memeber-wrap{
+    float: left;
+    width: 100%;
+}
+.gallery-img-wrap, .memeber-img-wrap{
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+/* .gallery-img-wrap:last-child{
+    margin-right: 0;
+} */
+.gallery-img-wrap img, .memeber-img-wrap img {
+    border-radius: 10px;
+}
+.memeber-wrap p{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+}
+.right{
+    margin-top: 20px;
+}
+.section-wrap{
+    padding-bottom: 20px;
 }

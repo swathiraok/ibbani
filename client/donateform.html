@@ -1,0 +1,62 @@
+<template name="donateform">
+    <div class="homepage-common-wrap">
+        <h5>Donar Details</h5>
+            <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s4">
+                          <input id="name" type="text" class="validate">
+                          <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s4">
+                          <input id="city_name" type="text" class="validate">
+                          <label for="city_name">City/Village/Town Name</label>
+                        </div>
+                        <div class="input-field col s4">
+                                <input id="country" type="text" class="validate">
+                                <label for="country">Country</label>
+                            </div>
+                      </div>
+                      <div class="row">
+                       
+                        <div class="input-field col s4">
+                                <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Cash</option>
+                                <option value="2">Card</option>
+                                <option value="3">Bank Transfer</option>
+                                <option value="4">Others</option>
+                                </select>
+                                <label>Donation Type</label>
+                        </div>
+                        <div class="input-field col s4">
+                                <input  id="amount" type="number" class="validate">
+                                <label for="amount">Amount</label>
+                              </div>
+                              <div class="input-field col s4">
+                                <input id="date" type="text" class="validate">
+                                <label for="date_receivd">Date received</label>
+                              </div>
+                        </div>
+                              <div class="row">
+                                    <div class="input-field col s4">
+                                            <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Adopting a child</option>
+                                            <option value="2">Education</option>
+                                            <option value="3">Computers</option>
+                                            <option value="4">Others</option>
+                                            </select>
+                                            <label>Donation For</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                            <textarea id="comments" class="materialize-textarea"></textarea>
+                                            <label for="comments">Comments</label>
+                                    </div>
+                                  </div>
+
+                    </form>
+                  </div>
+
+    </div>
+</template>
